@@ -2,6 +2,13 @@
 
 *note* 无线网卡型号是WCN685X
 
+```
+# lspci -nnvv -s 02:00.0
+02:00.0 Network controller [0280]: Qualcomm Device [17cb:1103] (rev 01)
+	Subsystem: Foxconn International, Inc. Device [105b:e0bb]
+```
+
+
 - 在debian 11上进行的操作
 
   1 编译可以正常驱动WCN685X的内核驱动模块ath11k.ko ath11k_pci.ko
